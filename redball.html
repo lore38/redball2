@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<HEAD>
+<style type="text/css">
+h2 {
+color: red;
+}
+</style>
+
+
+<script type="text/javascript" src='redball.js'>
+  </script>
+  <script type="text/javascript">
+
+
+function up() {
+  redball.top = redball.top -10;
+}
+
+
+function right() {
+  redball.left = redball.left +15;
+}
+
+
+function left() {
+  redball.left = redball.left -15;
+}
+  function down(){
+    redball.top = redball.top +15;
+  }
+
+function rightdown() {
+redball.left = redball.left +15;
+redball.top = redball.top +15
+}
+
+
+function rightup() {
+redball.top = redball.top -15;
+redball.left = redball.left +15;
+
+}
+
+
+
+function leftup() {
+redball.left = redball.left -15;
+redball.top = redball.top -15;
+}
+
+
+
+
+function leftdown() {
+redball.left = redball.left -15;
+redball.top = redball.top +15;
+}
+
+
+function square() {
+    for (i=0; i < 5; i++){
+right();
+
+}
+
+    for (i=0; i < 5; i++){
+down();
+}
+
+    for (i=0; i < 5; i++){
+left();
+}
+
+for (i=0; i < 5; i++){
+up();
+}
+
+for (i=0; i < 5; i++){
+right();
+}
+}
+function triangle() {
+    for (i=0; i < 10; i++){
+rightdown();
+
+}
+
+    for (i=0; i < 20; i++){
+left();
+}
+
+    for (i=0; i < 10; i++){
+rightup();
+}
+
+}
+
+function octagon () {
+for (i=0; i < 15; i++){
+redball.left = redball.left +8;
+}
+   for (i=0; i < 15; i++){
+redball.left = redball.left +8;
+redball.top = redball.top +8;
+}
+   for (i=0; i < 15; i++){
+redball.top = redball.top +12;
+}
+   for (i=0; i < 15; i++){
+redball.left = redball.left -8;
+redball.top = redball.top +8;
+}
+   for (i=0; i < 15; i++){
+redball.left = redball.left -8;
+}
+
+   for (i=0; i < 15; i++){
+redball.left = redball.left -8;
+redball.top = redball.top -8;
+}
+   for (i=0; i < 20; i++){
+redball.top = redball.top -11;
+}
+   for (i=0; i < 15; i++){
+redball.top = redball.top -8;
+redball.left = redball.left +8;
+}
+   for (i=0; i < 15; i++){
+redball.left = redball.left +8;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+</HEAD>
+
+<body>
+
+<button onclick="up()">UP</button>
+<button onclick="down()">DOWN</button>
+<button onclick="right()">RIGHT</button>
+<button onclick="left()">LEFT</button>
+<button onclick="rightup()">R.UP</button>
+<button onclick="rightdown()">R.DOWN</button>
+<button onclick="leftup()">L.UP</button>
+<button onclick="leftdown()">L.DOWN</button>
+<button onclick="square()">SQUARE</button>
+<button onclick="triangle()">TRIANGLE</button>
+<button onclick="octagon()">OCTAGON</button>
+
+<img id="redball" src="redball.jpg">
+
+
+
+</body>
